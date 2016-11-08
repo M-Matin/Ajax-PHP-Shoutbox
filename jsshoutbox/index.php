@@ -8,7 +8,19 @@
     <script src="JS/script.js"></script>
   </head>
   <body>
-
-
+    <div id='container'>
+      <header>
+        <h1>JS Shoutbox</h1>
+      </header>
+      <div id='shouts'>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <footer>
+        <form>
+          <lable>Name:</lable>
+      </footer>
+    </div>
   </body>
 </html>
