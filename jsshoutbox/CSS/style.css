@@ -36,3 +36,23 @@ header {
   list-style: none;
   line-height: 1.7em;
 }
+
+footer {
+  padding: 10px;
+  background: #333;
+  text-align: center;
+}
+
+input#name, input#shout {
+  padding: 3px;
+  height: 15px;
+}
+
+input#name {
+  width: 130px;
+  margin-right: 20px;
+}
+
+input#shout {
+  width: 270px;
+}
