@@ -24,3 +24,15 @@ header {
   padding: 10px;
   text-align: center;
 }
+
+#shouts {
+  height: 200px;
+  border: #333 1px solid;
+  margin: 30px;
+  padding: 15px;
+}
+
+#shouts li {
+  list-style: none;
+  line-height: 1.7em;
+}
