@@ -56,3 +56,11 @@ input#name {
 input#shout {
   width: 270px;
 }
+
+input#submit {
+  padding: 5px 10px;
+  border: 0;
+  background: #666;
+  color:#fff;
+  cursor: pointer;
+}
