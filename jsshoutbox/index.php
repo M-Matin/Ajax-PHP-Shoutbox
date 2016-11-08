@@ -20,6 +20,10 @@
       <footer>
         <form>
           <lable>Name:</lable>
+          <input type='text' id='name'>
+          <lable>Shout Text</lable>
+          <input type='text' id='shout'>
+          <input type='submit' id='submit' value='SHOUT!'>
       </footer>
     </div>
   </body>
