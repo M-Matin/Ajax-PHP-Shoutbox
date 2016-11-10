@@ -45,7 +45,7 @@ footer {
 
 input#name, input#shout {
   padding: 3px;
-  height: 15px;
+  height: 25px;
 }
 
 input#name {
@@ -58,7 +58,7 @@ input#shout {
 }
 
 input#submit {
-  padding: 5px 10px;
+  padding: 6px 10px;
   border: 0;
   background: #666;
   color:#fff;
