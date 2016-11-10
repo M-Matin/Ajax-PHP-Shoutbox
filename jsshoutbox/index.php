@@ -1,3 +1,7 @@
+//To connect database.php we need to write this php statement
+<?php include 'database.php' ;
+
+ ?>
 </<!DOCTYPE html>
 <html lang="en">
   <head>
