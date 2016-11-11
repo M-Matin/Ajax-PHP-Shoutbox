@@ -12,7 +12,19 @@ $(document).ready(function(){
     //validation
     if(name == '' || shout ==''){
       alert('Please fill in your name and commet!');
-    }
+    } else {
+      $.ajax({
+        type: 'POST',
+        url: '../jsshoutbox.php/shoutbox.php',
+        //data I want to use it
+        data: dataString,
+        cache: false,
+        //if it is successful run the function
+        success: function(html){//this function is for insert data to htlm file without refresh
+          $('#shout ul').prepend(html);
+        }
+      });
+}
     return false;
   });
 });
