@@ -15,7 +15,7 @@ $(document).ready(function(){
     } else {
       $.ajax({
         type: 'POST',
-        url: '../jsshoutbox.php/shoutbox.php',
+        url: '../jsshoutbox/shoutbox.php',
         //data I want to use it
         data: dataString,
         cache: false,
