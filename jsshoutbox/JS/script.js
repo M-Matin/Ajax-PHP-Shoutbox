@@ -5,7 +5,7 @@ $(document).ready(function(){
     var name = $('#name').val();
     var shout = $('#shout').val();
 //getdate() function is what I am going to define later to show the time of user input
-    var date = getdate();
+    var date = getDate();
 // dataString is the variable I am going to use for all other variable and then with AJAX I will pass this string to index.php
     var dataString = 'name =' + name + "/shout =" + shout + "/date =" + date;
 
@@ -28,3 +28,13 @@ $(document).ready(function(){
     return false;
   });
 });
+function getDate(){
+  var date;
+  date = new Date();
+  date = date.getUTCFullYear() + '-' +
+      ('00' + (date.getUTCMonth() + 1)).slice(-2) + '-' +
+      ('00' + date.getUTCDate()).slice(-2) + ' ' +
+      ('00' + date.getUTCHours()).slice(-2) + ':' +
+      ('00' + date.getUTCMinutes()).slice(-2) + ':' +
+      ('00' + date.getUTCSeconds()).slice(-2);
+}
