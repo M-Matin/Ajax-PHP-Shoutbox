@@ -12,8 +12,8 @@ if (isset($_POST['name']) && isset($_POST['shout'])){//this line says if 'name' 
   $date = mysqli_real_escape_string($con, $_POST['date']);//same thing I did for name variable
 
   //set timezone
-  date_default_timezone_set('America/San Francisco');
-  $date = date('h:i:s a' time());
+  date_default_timezone_set('America/SanFrancisco');
+  $date = date('h:i:s a' ,time());
 
   //create query for database
   $query = "INSERT INTO Shout (name, shout, date)
@@ -23,6 +23,6 @@ if (isset($_POST['name']) && isset($_POST['shout'])){//this line says if 'name' 
   if (!mysqli_query($con, $query)){
     echo 'Error: ' .mysqqli_error($con);
   } else {
-    echo '<li>' .name. ': ' .$shout. '['.$date.']' ;
+    echo '<li>' .name. ': ' .$shout. '['.$date.'] </li>' ;
   }
 }
