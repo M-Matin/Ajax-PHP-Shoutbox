@@ -1,7 +1,10 @@
 //To connect database.php we need to write this php statement
-<?php include 'database.php' ;
+<?php include 'database.php' ;?>
 
- ?>
+<?php //Create select query
+$query = "SELECT * FROM shouts ORDER BY id DESC";
+$shouts = mysqli_query($con, $query);
+?>
 </<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +21,9 @@
       </header>
       <div id='shouts'>
         <ul>
-          <li></li>
+          <?php while ($row = $mysqli_fetch_assoc($shouts)) : ?>
+          <li> <?php echo $row['name ']; ?> : <?php echo $row['shouts '];?>  [<?php echo $row['date '];?>]</li>
+        <?php endwhile; ?>
         </ul>
       </div>
       <footer>
