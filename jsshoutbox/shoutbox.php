@@ -18,4 +18,11 @@ if (isset($_POST['name']) && isset($_POST['shout'])){//this line says if 'name' 
   //create query for database
   $query = "INSERT INTO Shout (name, shout, date)
   VALUES('$name', '$shout', '$date')";
+
+  //check for Error
+  if (!mysqli_query($con, $query)){
+    echo 'Error: ' .mysqqli_error($con);
+  } else {
+    echo '<li>' .name. ': ' .$shout. '['.$date.']' ;
+  }
 }
